@@ -1,0 +1,104 @@
+*{
+	font-size: 16px;
+	background-color: #05ADAD;
+	color: black;
+	margin: 0;
+	padding: 0;
+	border: 1px solid;
+}
+
+header{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	background-color: #FBFBFB;
+}
+
+header *{
+	background-color: #FBFBFB;
+}
+
+header img{
+	width: 100%;
+	height: 100%;
+	max-width: 98px;
+	max-height: 103px;
+}
+
+header a{
+	text-decoration: none;
+}
+
+footer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	bottom: 0;
+	padding: 2rem;
+	background-color: #FBFBFB;
+}
+
+footer *{
+	background-color: #FBFBFB;
+}
+
+footer p{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+footer img{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #FBFBFB;
+	margin: 0 0.4rem;
+	width: 100%;
+	height: 100%;
+	max-width: 32px;
+}
+
+section{
+	padding: 0 8rem;
+	height: 100%;
+}
+
+h1{
+	font-size: 1.6rem;
+}
+
+.sobre img{
+	width: 100%;
+	height: 100%;
+	max-width: 190px;
+	min-width: 50px;
+	max-height: 190px;
+	min-height: 50px;
+	border-radius: 50%;
+}
+
+.sobre p{
+	display: flex;
+	justify-content: start;
+}
+
+.sobre span{
+	padding-left: 1.2rem;
+}
+
+.box{
+	background-color: #036E6E;
+}
+
+.contato img{
+	width: 100%;
+	height: 100%;
+	max-width: 180px;
+	max-height: 180px;
+}
+
+.contato div{
+	display: flex;
+	justify-content: start;
+}
