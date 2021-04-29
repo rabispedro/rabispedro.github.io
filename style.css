@@ -123,19 +123,40 @@ h1{
 	background-color: #036E6E;
 	padding: 1.2rem 0;
 	border-radius: 1.2rem;
-
 }
 
 .box-buttons *{
 	padding: 0.4rem;
 	background-color: #07FAFA;
 	border-radius: 1.2rem;
+	border-style: none;
+}
+
+#button-educacao:active, #button-educacao:active *{
+	border-style: none;
+	background-color: #06D4D4;
+}
+
+#button-habilidades:active, #button-habilidades:active *{
+	border-style: none;
+	background-color: #06D4D4;
+}
+
+#button-soft-skills:active, #button-soft-skills:active *{
+	border-style: none;
+	background-color: #06D4D4;
 }
 
 .box-content{
 	padding: 1rem 0.4rem;
 	border-radius: 1.2rem;
+}
 
+.box-content p{
+	color: #FBFBFB;
+	display: flex;
+	justify-content: center;
+	padding: 2rem 4.6rem;
 }
 
 .contato h1{
