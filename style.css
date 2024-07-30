@@ -1,176 +1,122 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+	box-sizing: border-box;
 	font-size: 16px;
-	background-color: #05ADAD;
-	color: black;
+
+	--primary-color: #1E1C1C;
+	--secondary-color: #181616;
+	--accent-color: #D01744;
+	--background-color: #111010;
+	--font-color: #EAEAEA;
+
+	background-color: var(--background-color);
+}
+
+* {
+	color: var(--font-color);
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	font-style: normal;
 	margin: 0;
 	padding: 0;
-	/* border: 1px solid; */
 }
 
-header{
+header {
+	display: flex;
+	width: auto;
+	top: 0;
+	position: sticky;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	padding: 0.8rem 0;
+	background-color: var(--primary-color);
+}
+
+header img {
+	width: 36px;
+	height: 36px;
+}
+
+header nav {
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
-	background-color: #FBFBFB;
 }
 
-header *{
-	background-color: #FBFBFB;
-}
-
-header img{
-	width: 100%;
-	height: 100%;
-	max-width: 98px;
-	max-height: 103px;
-}
-
-header a{
+header nav a {
+	color: var(--font-color);
 	text-decoration: none;
+	margin: 0 0.8rem;
 }
 
-footer{
+header nav a:last-child {
+	background-color: var(--accent-color);
+	padding: 0.2rem 1rem;
+	border-radius: 0.5rem;
+	box-shadow: 2px 2px 8px 0px var(--background-color), -1px -1px 8px #878585;
+}
+
+.entrypoint {
 	display: flex;
+	/* border: 2px solid red; */
+	align-items: center;
 	justify-content: center;
+	padding: 12% 0;
+}
+
+.entrypoint>img {
+	width: 240px;
+	height: 240px;
+	border-radius: 50%;
+	margin-right: 2rem;
+}
+
+.entrypoint h3 {
+	text-transform: uppercase;
+	font-size: 24px;
+}
+
+.entrypoint h1 {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 44px;
+}
+
+.wrapper-contact {
+	/* border: 2px solid red; */
+	margin-top: 1rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.wrapper-contact>a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 24px;
+	height: 24px;
+	padding: 1rem;
+	border-radius: 2rem;
+	background-color: var(--accent-color);
+	box-shadow: 2px 2px 8px 0px var(--background-color), -1px -1px 8px #878585;
+}
+
+footer {
+	display: flex;
+	justify-content: flex-start;
 	align-items: center;
 	bottom: 0;
-	padding: 2rem;
-	background-color: #FBFBFB;
+	padding: 2rem 4rem;
 }
 
-footer *{
-	background-color: #FBFBFB;
-}
-
-footer p{
+footer>p {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-}
-
-footer img{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-color: #FBFBFB;
-	margin: 0 0.4rem;
-	width: 100%;
-	height: 100%;
-	max-width: 32px;
-}
-
-section{
-	padding: 1.4rem 8rem;
-	height: 100%;
-}
-
-h1{
-	font-size: 1.6rem;
-}
-
-.sobre, .conhecimentos, .contato{
-	/* display: flex; */
-	padding: 1.4rem 0;
-}
-
-.sobre h1{
-	padding-bottom: 1.4rem;
-}
-
-.sobre img{
-	width: 100%;
-	height: 100%;
-	max-width: 190px;
-	min-width: 50px;
-	max-height: 190px;
-	min-height: 50px;
-	border-radius: 50%;
-}
-
-.sobre p{
-	display: flex;
-	justify-content: start;
-}
-
-.sobre span{
-	padding-left: 1.2rem;
-}
-
-.conhecimentos h1{
-	text-align: center;
-	padding-bottom: 1.4rem;
-}
-
-.box {
-	background-color: #036E6E;
-	border-radius: 20px;
-	width: 100%;
-	height: 100%;
-
-	min-width: 24rem;
-	min-height: 24rem;
-}
-
-.box *{
-	background-color: #036E6E;
-	border-radius: 1.2rem;
-}
-
-.box-buttons {
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-	background-color: #036E6E;
-	padding: 1.2rem 0;
-	border-radius: 1.2rem;
-}
-
-.box-buttons *{
-	padding: 0.4rem;
-	background-color: #07FAFA;
-	border-radius: 1.2rem;
-	border-style: none;
-}
-
-#button-educacao:active, #button-educacao:active *{
-	border-style: none;
-	background-color: #06D4D4;
-}
-
-#button-habilidades:active, #button-habilidades:active *{
-	border-style: none;
-	background-color: #06D4D4;
-}
-
-#button-soft-skills:active, #button-soft-skills:active *{
-	border-style: none;
-	background-color: #06D4D4;
-}
-
-.box-content{
-	padding: 1rem 0.4rem;
-	border-radius: 1.2rem;
-}
-
-.box-content p{
-	color: #FBFBFB;
-	display: flex;
-	justify-content: center;
-	padding: 2rem 4.6rem;
-}
-
-.contato h1{
-	padding-bottom: 1.4rem;
-}
-
-.contato img{
-	width: 100%;
-	height: 100%;
-	max-width: 180px;
-	max-height: 180px;
-}
-
-.contato div{
-	display: flex;
-	justify-content: start;
+	font-size: 12px;
 }
