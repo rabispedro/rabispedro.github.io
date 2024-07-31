@@ -106,6 +106,22 @@ header nav a:last-child {
 	box-shadow: 2px 2px 8px 0px var(--background-color), -1px -1px 8px #878585;
 }
 
+.wip-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.wip {
+	font-size: 28px;
+	text-transform: uppercase;
+	font-weight: 700;
+	background-color: var(--accent-color);
+	padding: 1.4rem 2.8rem;
+	border-radius: 0.5rem;
+	box-shadow: 2px 2px 8px 0px var(--background-color), -1px -1px 8px #878585;
+}
+
 footer {
 	display: flex;
 	justify-content: flex-start;
