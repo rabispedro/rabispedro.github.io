@@ -5,17 +5,27 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Portifólio de experiência profissional e pessoal de Pedro Rabis">
+	<meta name="keywords"
+		content="html,css,js,backend,portifolio,frontend,fullstack,java,nestjs,springboot,.net,csharp">
+
 	<link rel="stylesheet" href="style.css">
+	<link rel="manifest" href="./manifest.json">
+	<link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+
 	<title>Portifólio | Pedro Rabis</title>
 </head>
 
 <body>
+	<script src="./scripts.js" defer></script>
 	<header>
 		<img src="./assets/svgs/book.svg" alt="Livro em branco">
-		<nav>
-			<a href="">Início</a>
-			<a href="">Sobre</a>
-			<a href="">Projetos</a>
+		<nav
+			aria-label="navegador de links de rápido acesso dentro do site: inicio, projetos, profissional, academico e contato">
+			<a href="#">Início</a>
+			<a href="#projetos">Projetos</a>
+			<a href="#profissional">Profissional</a>
+			<a href="#academico">Acadêmico</a>
 			<a href="">Contato</a>
 		</nav>
 	</header>
@@ -27,12 +37,14 @@
 			<span>
 				<h1>Desenvolvedor FullStack</h1>
 				<nav class="wrapper-contact">
-					<a href="https://github.com/rabispedro/" target="_blank" no-referrer><img src="./assets//svgs/github.svg"
-							alt="Ícone branco do GitHub com fundo avermelhado"></a>
+					<a href="https://github.com/rabispedro/" target="_blank" no-referrer><img
+							src="./assets//svgs/github.svg" alt="Ícone branco do GitHub com fundo avermelhado"></a>
 					<a href="https://www.linkedin.com/in/rabispedro/" target="_blank" no-referrer><img
 							src="./assets//svgs/linkedin.svg" alt="Ícone branco do Linkedin com fundo avermelhado"></a>
-					<a href=""><img src="./assets//svgs/mail.svg" alt="Ícone branco de um E-mail com fundo avermelhado"></a>
-					<a href=""><img src="./assets//svgs/file.svg" alt="Ícone branco de um arquivo com fundo avermelhado"></a>
+					<a href=""><img src="./assets//svgs/mail.svg"
+							alt="Ícone branco de um E-mail com fundo avermelhado"></a>
+					<a href=""><img src="./assets//svgs/file.svg"
+							alt="Ícone branco de um arquivo com fundo avermelhado"></a>
 				</nav>
 			</span>
 		</span>
@@ -42,9 +54,106 @@
 		<span class="wip">Em manutenção</span>
 	</section>
 
+	<article id="projeto">
+		<h1>Projetos</h1>
+
+		<ul>
+			<li><a href="https://github.com/rabispedro/ms-income" target="_blank" rel="noopener noreferrer">MS
+					Income</a></li>
+			<li><a href="https://github.com/rabispedro/ws-market-backend" target="_blank" rel="noopener noreferrer">WS
+					Market Backend</a></li>
+			<li><a href="https://github.com/rabispedro/ws-blog-backend" target="_blank" rel="noopener noreferrer">WS
+					Blog Backend</a></li>
+			<li><a href="https://github.com/rabispedro/api-movies" target="_blank" rel="noopener noreferrer">API
+					Movies</a></li>
+			<li><a href="https://github.com/rabispedro/competitive-programming-3" target="_blank"
+					rel="noopener noreferrer">Competitive Programming 3</a></li>
+			<li><a href="https://github.com/rabispedro/viva-sabor-api" target="_blank" rel="noopener noreferrer">Viva
+					Sabor API</a></li>
+			<li><a href="https://github.com/rabispedro/viva-sabor-web" target="_blank" rel="noopener noreferrer">Viva
+					Sabor Web</a></li>
+			<li><a href="https://github.com/rabispedro/pokemon-generations" target="_blank"
+					rel="noopener noreferrer">Pokemon Generations</a></li>
+			<li><a href="https://github.com/rabispedro/rinha-de-pedro" target="_blank" rel="noopener noreferrer">Rinha
+					de Pedro</a></li>
+			<li><a href="https://github.com/rabispedro/hackagis-2023" target="_blank" rel="noopener noreferrer">HackaGIS
+					2023</a></li>
+		</ul>
+	</article>
+
+	<article id="profissional">
+		<h1>Experiência Profissional</h1>
+
+		<ul>
+			<li class="empresa">ASCII Empresa Júnior</li>
+			<ul>
+				<li><strong>Trainee</strong> - 05/2021 à 08/2021</li>
+				<li><strong>Assessor de Projetos e Assessor de Vice-Presidência</strong> - 08/2021 à 01/2022</li>
+				<li><strong>Diretor de Presidência</strong> - 02/2022 à 02/2023</li>
+			</ul>
+
+			<li class="empresa">Arpia Tecnologia</li>
+			<ul>
+				<li><strong>Estágio</strong> - 01/2022 à 03/2022</li>
+				<li><strong>Desenvolvedor FullStack</strong> - 04/2022 à 05/2023</li>
+				<li><strong>Desenvolvedor Backend Meio-Período</strong> - 06/2023 à 09/2023</li>
+				<li><strong>Desenvolvedor Backend</strong> - 10/2024 à 03/2025</li>
+			</ul>
+		</ul>
+	</article>
+
+	<article id="academico">
+		<h1>Projetos Acadêmicos</h1>
+
+		<ul>
+			<li>Bacharel em Engenharia de Computação - IFTM</li>
+			<ul>
+				<li>Monitoria Voluntário: Algorimtos</li>
+				<li>Projeto junto ao PET: ED+ (Estrutura de Dados)</li>
+				<li>Monitoria: Algoritmos NAPNE</li>
+				<li>Iniciação Científica: Padrões de Arquitetura de Software: Uma Análise Comparativa</li>
+				<li>Iniciação Científica: Arquitetura de Dados para Mineração de Bitcoin: Implementação de Sistemas
+					Modernos de Coleta e Análise</li>
+			</ul>
+		</ul>
+	</article>
+
+	<article>
+		<h1>Reviews de colegas</h1>
+
+		<span class="card-wrapper">
+			<span class="card">
+				<p class="card-review">
+					Pedro foi uma grata surpresa no trabalho, desde o estágio sempre um bom companheiro, uma pessoa
+					muito sábia e muito inteligente, domina de ponta a ponta toda a parte web, garanto que ter Pedro em
+					sua equipe é um privilégio para todos e só tem a agregar bastante para qualquer projeto.
+				</p>
+				<p class="card-author">Allan Quiterio</p>
+			</span>
+
+			<span class="card">
+				<p class="card-review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error eum
+					architecto
+					dolorem voluptates corrupti a similique voluptate pariatur explicabo soluta excepturi eveniet
+					facilis
+					molestiae consectetur repellat, nobis expedita. Cumque, cupiditate?</p>
+				<p class="card-author">John Doe</p>
+			</span>
+
+			<span class="card">
+				<p class="card-review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error eum
+					architecto
+					dolorem voluptates corrupti a similique voluptate pariatur explicabo soluta excepturi eveniet
+					facilis
+					molestiae consectetur repellat, nobis expedita. Cumque, cupiditate?</p>
+				<p class="card-author">John Doe</p>
+			</span>
+		</span>
+	</article>
+
 	<footer>
 		<p>
-			2024 © Pedro Rabis
+			2025 © Pedro Rabis
 		</p>
 	</footer>
 </body>

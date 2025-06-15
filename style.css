@@ -11,6 +11,7 @@
 	--font-color: #EAEAEA;
 
 	background-color: var(--background-color);
+	scroll-behavior: smooth;
 }
 
 * {
@@ -60,10 +61,10 @@ header nav a:last-child {
 
 .entrypoint {
 	display: flex;
-	/* border: 2px solid red; */
 	align-items: center;
+	width: 100%;
 	justify-content: center;
-	padding: 12% 0;
+	padding: 4% 0;
 }
 
 .entrypoint>img {
@@ -85,7 +86,6 @@ header nav a:last-child {
 }
 
 .wrapper-contact {
-	/* border: 2px solid red; */
 	margin-top: 1rem;
 	display: flex;
 	flex-direction: row;
@@ -122,12 +122,57 @@ header nav a:last-child {
 	box-shadow: 2px 2px 8px 0px var(--background-color), -1px -1px 8px #878585;
 }
 
+.card-wrapper {
+	display: flex;
+	margin-top: 2rem;
+	width: 100%;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+
+	justify-content: space-evenly;
+
+	width: 25%;
+	height: 12rem;
+	padding: 1.5rem;
+	border-radius: 2rem;
+	background-color: var(--primary-color);
+	box-shadow: 2px 2px 8px 0px var(--background-color), -1px -1px 8px #878585;
+}
+
+.card-review {
+	text-align: justify;
+	margin-bottom: auto;
+}
+
+.card-author {
+	margin-top: 1rem;
+	text-align: end;
+}
+
+.card-author::before {
+	content: "- " open-quote;
+}
+
+.card-author::after {
+	content: close-quote;
+}
+
+ul, li {
+	margin-left: 1.4rem;
+}
+
 footer {
 	display: flex;
-	justify-content: flex-start;
+	justify-content: center;
 	align-items: center;
-	bottom: 0;
+	margin-top: 1rem;
 	padding: 2rem 4rem;
+	background-color: var(--primary-color);
 }
 
 footer>p {
