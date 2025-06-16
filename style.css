@@ -59,6 +59,10 @@ header nav a:last-child {
 	box-shadow: 2px 2px 8px 0px var(--background-color), -1px -1px 8px #878585;
 }
 
+section {
+	padding: 0 1.8rem;
+}
+
 .entrypoint {
 	display: flex;
 	align-items: center;
@@ -106,20 +110,46 @@ header nav a:last-child {
 	box-shadow: 2px 2px 8px 0px var(--background-color), -1px -1px 8px #878585;
 }
 
-.wip-wrapper {
+#article-wrapper {
 	display: flex;
-	align-items: center;
-	justify-content: center;
 }
 
-.wip {
-	font-size: 28px;
-	text-transform: uppercase;
+article {
+	margin: 1rem 0;
+	flex: 1 1 0;
+	padding: 0 0.5rem;
+}
+
+article>h1 {
 	font-weight: 700;
-	background-color: var(--accent-color);
-	padding: 1.4rem 2.8rem;
-	border-radius: 0.5rem;
-	box-shadow: 2px 2px 8px 0px var(--background-color), -1px -1px 8px #878585;
+	margin-bottom: 1rem;
+}
+
+.accordion {
+	width: 100%;
+}
+
+.accordion::after {
+	content: '⬇️';
+	margin-left: 4%;
+}
+
+.accordion+ul {
+	max-height: 0;
+	overflow: hidden;
+}
+
+.accordion:hover {
+	cursor: pointer;
+}
+
+.accordion.active-acorddion+ul {
+	max-height: 100%;
+}
+
+.accordion.active-acorddion::after {
+	content: '⬆️';
+	margin-left: 4%;
 }
 
 .card-wrapper {
@@ -137,7 +167,7 @@ header nav a:last-child {
 	justify-content: space-evenly;
 
 	width: 25%;
-	height: 12rem;
+	height: 15rem;
 	padding: 1.5rem;
 	border-radius: 2rem;
 	background-color: var(--accent-color);
@@ -162,8 +192,26 @@ header nav a:last-child {
 	content: close-quote;
 }
 
-ul, li {
+#projeto {
+	flex-grow: 0.6;
+}
+
+#projeto li {
+	list-style-type: '🚀 ';
+}
+
+.empresa {
+	list-style-type: '💼 ';
+}
+
+.faculdade {
+	list-style-type: '📚️ ';
+}
+
+ul,
+li {
 	margin-left: 1.4rem;
+	list-style-type: '⭐️ ';
 }
 
 footer {
