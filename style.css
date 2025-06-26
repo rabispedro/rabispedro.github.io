@@ -23,44 +23,57 @@
 	padding: 0;
 }
 
-header {
-	display: flex;
-	width: auto;
-	top: 0;
-	position: sticky;
-	flex-direction: row;
-	justify-content: space-around;
-	align-items: center;
-	padding: 0.8rem 0;
-	background-color: var(--primary-color);
+body:nth-child(odd) {
+	background-color: var(--secondary-color);
 }
 
-header img {
+body:nth-child(even) {
+	background-color: var(--background-color);
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	width: auto;
+
+	padding: 0.8rem 0;
+
+	background-image: linear-gradient(125deg, #FFF1, #000C), url(assets/images/nasa-wallpaper.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.header-nav {
+	display: flex;
+	padding: 0.8rem 0;
+
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+}
+
+.header-nav>img {
 	width: 36px;
 	height: 36px;
 }
 
-header nav {
+.header-nav>nav {
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
 }
 
-header nav a {
+.header-nav nav a {
 	color: var(--font-color);
 	text-decoration: none;
 	margin: 0 0.8rem;
 }
 
-header nav a:last-child {
-	background-color: var(--accent-color);
-	padding: 0.2rem 1rem;
-	border-radius: 0.5rem;
-	box-shadow: 2px 2px 8px 0px var(--background-color), -1px -1px 8px #878585;
-}
-
 section {
 	padding: 0 1.8rem;
+	margin: 1rem 0;
+	/* background-color: var(--background-color); */
 }
 
 .entrypoint {
@@ -72,21 +85,21 @@ section {
 }
 
 .entrypoint>img {
-	width: 240px;
-	height: 240px;
-	border-radius: 50%;
-	margin-right: 2rem;
+	width: clamp(6rem, 8rem, 15rem);
+	height: clamp(6rem, 8rem, 15rem);
+	border-radius: 100%;
+	margin-right: 1%;
 }
 
 .entrypoint h3 {
 	text-transform: uppercase;
-	font-size: 24px;
+	font-size: medium;
 }
 
 .entrypoint h1 {
 	text-transform: uppercase;
 	font-weight: 700;
-	font-size: 44px;
+	font-size: large;
 }
 
 .wrapper-contact {
@@ -115,13 +128,22 @@ section {
 }
 
 article {
-	margin: 1rem 0;
 	flex: 1 1 0;
 	padding: 0 0.5rem;
 }
 
-article>h1 {
+article span>h1 {
+	color: var(--font-color);
+	text-transform: uppercase;
 	font-weight: 700;
+	font-size: xx-large;
+}
+
+article span>hr {
+	width: 25%;
+	height: 0.25rem;
+	background-color: var(--accent-color);
+	border: none;
 	margin-bottom: 1rem;
 }
 
@@ -166,7 +188,7 @@ article>h1 {
 
 	justify-content: space-evenly;
 
-	width: 25%;
+	width: clamp(25%, 20rem, 90%);
 	height: 15rem;
 	padding: 1.5rem;
 	border-radius: 2rem;
@@ -177,6 +199,13 @@ article>h1 {
 .card-review {
 	text-align: justify;
 	margin-bottom: auto;
+
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+.card-review::-webkit-scrollbar {
+	display: block;
 }
 
 .card-author {
@@ -192,26 +221,76 @@ article>h1 {
 	content: close-quote;
 }
 
-#projeto {
-	flex-grow: 0.6;
-}
-
-#projeto li {
-	list-style-type: '🚀 ';
-}
-
-.empresa {
-	list-style-type: '💼 ';
-}
-
-.faculdade {
-	list-style-type: '📚️ ';
-}
-
 ul,
 li {
 	margin-left: 1.4rem;
 	list-style-type: '⭐️ ';
+}
+
+.aside-nav {
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 0;
+
+	align-items: flex-start;
+	justify-content: space-evenly;
+
+	width: 28%;
+}
+
+.aside-nav>button {
+	width: 100%;
+	height: 100%;
+	background: none;
+	border: none;
+	color: var(--font-color);
+	background-color: var(--background-color);
+	text-transform: uppercase;
+	text-align: start;
+	padding: 1rem 0.5rem;
+	border-left: 0.25rem solid transparent;
+}
+
+.ativo {
+	border-left: 0.25rem solid var(--accent-color) !important;
+}
+
+.content {
+	display: flex;
+	width: 70%;
+	/* background-color: var(--background-color); */
+}
+
+.content>ul {
+	display: none;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	flex: 1 1 0;
+	width: 100%;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 0;
+	width: 100%;
+}
+
+.selecionado {
+	display: flex !important;
+	flex: 1 1 0;
+	flex-direction: column;
+
+	align-items: flex-start;
+	justify-content: space-evenly;
+}
+
+button:hover {
+	cursor: pointer;
+	filter: brightness(1.75);
 }
 
 footer {
@@ -219,7 +298,7 @@ footer {
 	justify-content: center;
 	align-items: center;
 	margin-top: 1rem;
-	padding: 2rem 4rem;
+	padding: 1.8rem 0rem;
 	background-color: var(--primary-color);
 }
 
@@ -227,5 +306,5 @@ footer>p {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-size: 12px;
+	font-size: small;
 }

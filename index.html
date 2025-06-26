@@ -20,117 +20,122 @@
 	<script src="./scripts.js" defer></script>
 
 	<header>
-		<img src="./assets/svgs/book.svg" alt="Livro em branco">
-		<nav
-			aria-label="navegador de links de rápido acesso dentro do site: inicio, projetos, profissional, academico e contato">
-			<a href="#">Início</a>
-			<a href="#projetos">Projetos</a>
-			<a href="#profissional">Profissional</a>
-			<a href="#academico">Acadêmico</a>
-			<a href="">Contato</a>
-		</nav>
+		<div class="row header-nav">
+			<img src="./assets/svgs/book.svg" alt="Livro em branco">
+			<nav
+				aria-label="navegador de links de rápido acesso dentro do site: inicio, projetos, profissional, academico e contato">
+				<a href="#experiencias">Experiências</a>
+				<a href="#reviews">Reviews</a>
+				<a href="#minigames">Minijogos</a>
+			</nav>
+		</div>
+
+		<div class="row entrypoint">
+			<img src="./assets/images/profile.jpg" alt="Rosto em semi-perfil">
+			<span>
+				<h3>Olá, me chamo Pedro Rabis</h3>
+				<span>
+					<h1>Desenvolvedor FullStack</h1>
+					<nav class="wrapper-contact">
+						<a href="https://github.com/rabispedro/" target="_blank" no-referrer><img
+								src="./assets//svgs/github.svg" alt="Ícone branco do GitHub com fundo avermelhado"></a>
+						<a href="https://www.linkedin.com/in/rabispedro/" target="_blank" no-referrer><img
+								src="./assets//svgs/linkedin.svg"
+								alt="Ícone branco do Linkedin com fundo avermelhado"></a>
+						<a href="mailto:rabis.pedro@gmail.com"><img src="./assets//svgs/mail.svg"
+								alt="Ícone branco de um E-mail com fundo avermelhado"></a>
+						<a href="./assets/pdfs/curriculum-vitae.pdf" download target="_blank" no-referrer><img
+								src="./assets//svgs/file.svg"
+								alt="Ícone branco de um arquivo com fundo avermelhado"></a>
+					</nav>
+				</span>
+			</span>
+		</div>
 	</header>
 
-	<section class="entrypoint">
-		<img src="./assets/images/profile.jpg" alt="Rosto em semi-perfil">
-		<span>
-			<h3>Olá, me chamo Pedro Rabis</h3>
+	<section>
+		<article id="experiencias">
 			<span>
-				<h1>Desenvolvedor FullStack</h1>
-				<nav class="wrapper-contact">
-					<a href="https://github.com/rabispedro/" target="_blank" no-referrer><img
-							src="./assets//svgs/github.svg" alt="Ícone branco do GitHub com fundo avermelhado"></a>
-					<a href="https://www.linkedin.com/in/rabispedro/" target="_blank" no-referrer><img
-							src="./assets//svgs/linkedin.svg" alt="Ícone branco do Linkedin com fundo avermelhado"></a>
-					<a href="mailto:rabis.pedro@gmail.com"><img src="./assets//svgs/mail.svg"
-							alt="Ícone branco de um E-mail com fundo avermelhado"></a>
-					<a href="./assets/pdfs/curriculum-vitae.pdf" download target="_blank" no-referrer><img
-							src="./assets//svgs/file.svg" alt="Ícone branco de um arquivo com fundo avermelhado"></a>
-				</nav>
+				<h1>Experiências</h1>
+				<hr>
 			</span>
-		</span>
-	</section>
 
-	<section id="article-wrapper">
-		<article id="projeto">
-			<h1>Projetos</h1>
+			<div class="row">
+				<div id="experience-selector" class="aside-nav">
+					<button onclick="selectExperience(this)" id="ascii-empresa-junior" class="ativo">ASCII Empresa
+						Júnior</button>
+					<button onclick="selectExperience(this)" id="arpia-tecnologia-inovacao">Arpia Tecnologia e
+						Inovação</button>
+					<button onclick="selectExperience(this)" id="iftm">IFTM</button>
+					<button onclick="selectExperience(this)" id="projetos-pessoais">Projetos Pessoais</button>
+				</div>
 
-			<ul>
-				<li><a href="https://github.com/rabispedro/ms-income" target="_blank" rel="noopener noreferrer">MS
-						Income</a></li>
-				<li><a href="https://github.com/rabispedro/ws-market-backend" target="_blank"
-						rel="noopener noreferrer">WS
-						Market Backend</a></li>
-				<li><a href="https://github.com/rabispedro/ws-blog-backend" target="_blank" rel="noopener noreferrer">WS
-						Blog Backend</a></li>
-				<li><a href="https://github.com/rabispedro/api-movies" target="_blank" rel="noopener noreferrer">API
-						Movies</a></li>
-				<li><a href="https://github.com/rabispedro/competitive-programming-3" target="_blank"
-						rel="noopener noreferrer">Competitive Programming 3</a></li>
-				<li><a href="https://github.com/rabispedro/viva-sabor-api" target="_blank"
-						rel="noopener noreferrer">Viva
-						Sabor API</a></li>
-				<li><a href="https://github.com/rabispedro/viva-sabor-web" target="_blank"
-						rel="noopener noreferrer">Viva
-						Sabor Web</a></li>
-				<li><a href="https://github.com/rabispedro/pokemon-generations" target="_blank"
-						rel="noopener noreferrer">Pokemon Generations</a></li>
-				<li><a href="https://github.com/rabispedro/rinha-de-pedro" target="_blank"
-						rel="noopener noreferrer">Rinha
-						de Pedro</a></li>
-				<li><a href="https://github.com/rabispedro/hackagis-2023" target="_blank"
-						rel="noopener noreferrer">HackaGIS
-						2023</a></li>
-			</ul>
-		</article>
+				<div id="experience-list" class="content">
+					<ul id="conteudo-ascii-empresa-junior" class="selecionado">
+						<li><strong>Trainee</strong> - 05/2021 à 08/2021</li>
+						<li><strong>Assessor de Projetos e Assessor de Vice-Presidência</strong> - 08/2021 à 01/2022
+						</li>
+						<li><strong>Diretor de Presidência</strong> - 02/2022 à 02/2023</li>
+					</ul>
 
-		<article id="profissional">
-			<h1>Experiência Profissional</h1>
+					<ul id="conteudo-arpia-tecnologia-inovacao">
+						<li><strong>Estágio</strong> - 01/2022 à 03/2022</li>
+						<li><strong>Desenvolvedor FullStack</strong> - 04/2022 à 08/2023</li>
+						<li><strong>Desenvolvedor Backend Meio-Período</strong> - 06/2024 à 09/2024</li>
+						<li><strong>Desenvolvedor Backend</strong> - 10/2024 à 03/2025</li>
+					</ul>
 
-			<ul>
-				<li class="empresa accordion" onclick="toggleAccordion(this)">ASCII Empresa Júnior - (1 ano e 10 meses)
-				</li>
-				<ul>
-					<li><strong>Trainee</strong> - 05/2021 à 08/2021</li>
-					<li><strong>Assessor de Projetos e Assessor de Vice-Presidência</strong> - 08/2021 à 01/2022</li>
-					<li><strong>Diretor de Presidência</strong> - 02/2022 à 02/2023</li>
-				</ul>
+					<ul id="conteudo-iftm">
+						<li>Monitoria Voluntário: Algorimtos</li>
+						<li>Projeto junto ao PET: ED+ (Estrutura de Dados)</li>
+						<li>Monitoria: Algoritmos NAPNE</li>
+						<li>Iniciação Científica: Padrões de Arquitetura de Software: Uma Análise Comparativa</li>
+						<li>Iniciação Científica: Arquitetura de Dados para Mineração de Bitcoin: Implementação de
+							Sistemas
+							Modernos de Coleta e Análise</li>
+					</ul>
 
-				<li class="empresa accordion" onclick="toggleAccordion(this)">Arpia Tecnologia e Inovação - (2 anos e 3
-					meses)</li>
-				<ul>
-					<li><strong>Estágio</strong> - 01/2022 à 03/2022</li>
-					<li><strong>Desenvolvedor FullStack</strong> - 04/2022 à 08/2023</li>
-					<li><strong>Desenvolvedor Backend Meio-Período</strong> - 06/2024 à 09/2024</li>
-					<li><strong>Desenvolvedor Backend</strong> - 10/2024 à 03/2025</li>
-				</ul>
-			</ul>
-		</article>
-
-		<article id="academico">
-			<h1>Projetos Acadêmicos</h1>
-
-			<ul>
-				<li class="faculdade accordion" onclick="toggleAccordion(this)">Instituto Federal de Educação, Ciência e
-					Tecnologia do
-					Triângulo Mineiro</li>
-				<ul>
-					<li>Monitoria Voluntário: Algorimtos</li>
-					<li>Projeto junto ao PET: ED+ (Estrutura de Dados)</li>
-					<li>Monitoria: Algoritmos NAPNE</li>
-					<li>Iniciação Científica: Padrões de Arquitetura de Software: Uma Análise Comparativa</li>
-					<li>Iniciação Científica: Arquitetura de Dados para Mineração de Bitcoin: Implementação de Sistemas
-						Modernos de Coleta e Análise</li>
-				</ul>
-			</ul>
+					<ul id="conteudo-projetos-pessoais">
+						<li><a href="https://github.com/rabispedro/ms-income" target="_blank"
+								rel="noopener noreferrer">MS
+								Income</a></li>
+						<li><a href="https://github.com/rabispedro/ws-market-backend" target="_blank"
+								rel="noopener noreferrer">WS
+								Market Backend</a></li>
+						<li><a href="https://github.com/rabispedro/ws-blog-backend" target="_blank"
+								rel="noopener noreferrer">WS
+								Blog Backend</a></li>
+						<li><a href="https://github.com/rabispedro/api-movies" target="_blank"
+								rel="noopener noreferrer">API
+								Movies</a></li>
+						<li><a href="https://github.com/rabispedro/competitive-programming-3" target="_blank"
+								rel="noopener noreferrer">Competitive Programming 3</a></li>
+						<li><a href="https://github.com/rabispedro/viva-sabor-api" target="_blank"
+								rel="noopener noreferrer">Viva
+								Sabor API</a></li>
+						<li><a href="https://github.com/rabispedro/viva-sabor-web" target="_blank"
+								rel="noopener noreferrer">Viva
+								Sabor Web</a></li>
+						<li><a href="https://github.com/rabispedro/pokemon-generations" target="_blank"
+								rel="noopener noreferrer">Pokemon Generations</a></li>
+						<li><a href="https://github.com/rabispedro/rinha-de-pedro" target="_blank"
+								rel="noopener noreferrer">Rinha
+								de Pedro</a></li>
+						<li><a href="https://github.com/rabispedro/hackagis-2023" target="_blank"
+								rel="noopener noreferrer">HackaGIS
+								2023</a></li>
+					</ul>
+				</div>
+			</div>
 		</article>
 	</section>
-
 
 	<section>
-
-		<article>
-			<h1>Reviews de colegas</h1>
+		<article id="reviews">
+			<span>
+				<h1>Reviews de colegas</h1>
+				<hr>
+			</span>
 
 			<span class="card-wrapper">
 				<span class="card">
@@ -142,27 +147,21 @@
 					</p>
 					<p class="card-author">Allan Quiterio</p>
 				</span>
-
-				<!-- <span class="card">
-					<p class="card-review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error eum
-						architecto
-						dolorem voluptates corrupti a similique voluptate pariatur explicabo soluta excepturi eveniet
-						facilis
-						molestiae consectetur repellat, nobis expedita. Cumque, cupiditate?</p>
-						<p class="card-author">John Doe</p>
-					</span> -->
-
-				<!-- <span class="card">
-						<p class="card-review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error eum
-							architecto
-							dolorem voluptates corrupti a similique voluptate pariatur explicabo soluta excepturi eveniet
-							facilis
-							molestiae consectetur repellat, nobis expedita. Cumque, cupiditate?</p>
-							<p class="card-author">John Doe</p>
-						</span> -->
 			</span>
 		</article>
 	</section>
+
+	<!-- <section>
+		<article id="minigames">
+			<span>
+				<h1>Mini-jogos</h1>
+				<hr>
+			</span>
+
+
+			<canvas id="game-canvas"></canvas>
+		</article>
+	</section> -->
 
 	<footer>
 		<p>

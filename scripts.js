@@ -14,10 +14,32 @@ function toggleAccordion(element) {
 		return
 	}
 
-	if(!element.classList.contains("active-acorddion")) {
+	if (!element.classList.contains("active-acorddion")) {
 		element.classList.add("active-acorddion")
 		return
 	}
 
 	element.classList.remove("active-acorddion")
+}
+
+function selectExperience(element) {
+	if (!element) {
+		return
+	}
+
+	const nav = element.parentNode
+	for (const button of nav.children) {
+		button.classList.remove("ativo")
+	}
+	element.classList.add("ativo")
+
+	const contentName = `conteudo-${element.id}`
+
+	const div = document.getElementById("experience-list")
+	for (const experience of div.children) {
+		experience.classList.remove("selecionado")
+	}
+
+	const content = document.getElementById(contentName)
+	content.classList.add("selecionado")
 }
