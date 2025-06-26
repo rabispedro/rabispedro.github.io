@@ -1,4 +1,7 @@
 window.onload = () => {
+	const gameCanvas = document.getElementById("game-canvas")
+	const gameContext = gameCanvas.getContext("2d")
+
 	console.log(
 		"    _____        _          __                              _           __      ______\n",
 		"  / ___/___    (_)___ _   / /_  ___  ____ ___       _   __(_)___  ____/ /___  / / / /\n",
@@ -6,6 +9,8 @@ window.onload = () => {
 		" ___/ /  __/ / / /_/ /  / /_/ /  __/ / / / / /_____/ |/ / / / / / /_/ / /_/ /_/_/_/  \n",
 		"/____/\\___/_/ /\\__,_/  /_.___/\\___/_/ /_/ /_/      |___/_/_/ /_/\\__,_/\\____(_|_|_)   \n",
 		"         /___/                                                                       \n")
+
+	draw(gameContext)
 }
 
 
@@ -43,3 +48,18 @@ function selectExperience(element) {
 	const content = document.getElementById(contentName)
 	content.classList.add("selecionado")
 }
+
+
+
+function draw(context) {
+	context.shadowOffsetX = 1
+	context.shadowOffsetY = 1
+	context.shadowBlur = 0
+	context.shadowColor = "#D01744"
+	
+	context.font = "16px Poppins"
+	context.fillStyle = "#EAEAEA"
+	context.fillText("MINIJOGO", 100, 20)
+
+}
+

@@ -288,6 +288,12 @@ li {
 	justify-content: space-evenly;
 }
 
+canvas {
+	width: 21rem;
+	height: 30rem;
+	border: 1px solid snow;
+}
+
 button:hover {
 	cursor: pointer;
 	filter: brightness(1.75);
