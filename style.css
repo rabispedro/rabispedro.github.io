@@ -73,7 +73,6 @@ header {
 section {
 	padding: 0 1.8rem;
 	margin: 1rem 0;
-	/* background-color: var(--background-color); */
 }
 
 .entrypoint {
@@ -248,8 +247,7 @@ li {
 	text-transform: uppercase;
 	text-align: start;
 	padding: 1rem 0.5rem;
-	border-left: 0.25rem solid transparent;
-	/* border-bottom: 0.25rem solid transparent; */
+	border-left: 0.25rem solid var(--primary-color);
 }
 
 .ativo {
@@ -262,7 +260,6 @@ li {
 .content {
 	display: flex;
 	width: 70%;
-	/* background-color: var(--background-color); */
 }
 
 .content>ul {
