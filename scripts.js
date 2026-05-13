@@ -13,7 +13,6 @@ window.onload = () => {
 	draw(gameContext)
 }
 
-
 function toggleAccordion(element) {
 	if (!element) {
 		return
@@ -49,8 +48,6 @@ function selectExperience(element) {
 	content.classList.add("selecionado")
 }
 
-
-
 function draw(context) {
 	context.shadowOffsetX = 1
 	context.shadowOffsetY = 1
@@ -60,6 +57,4 @@ function draw(context) {
 	context.font = "16px Poppins"
 	context.fillStyle = "#EAEAEA"
 	context.fillText("MINIJOGO", 100, 20)
-
 }
-
