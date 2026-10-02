@@ -17,7 +17,7 @@
 * {
 	color: var(--font-color);
 	font-family: "Poppins", sans-serif;
-	font-weight: 400;
+	/* font-weight: 400; */
 	font-style: normal;
 	margin: 0;
 	padding: 0;
@@ -189,7 +189,7 @@ article span>hr {
 
 	width: clamp(25%, 20rem, 90%);
 	height: 15rem;
-	padding: 1.5rem;
+	padding: 1rem;
 	border-radius: 2rem;
 	background-color: var(--accent-color);
 	box-shadow: 2px 2px 8px 0px var(--background-color), -1px -1px 8px #878585;
@@ -198,6 +198,8 @@ article span>hr {
 .card-review {
 	text-align: justify;
 	margin-bottom: auto;
+
+	hyphens: none;
 
 	overflow-x: hidden;
 	overflow-y: scroll;
@@ -208,12 +210,15 @@ article span>hr {
 }
 
 .card-author {
-	margin-top: 1rem;
+	font-size: medium;
+	font-weight: 300;
+
+	margin-top: 0.5rem;
 	text-align: end;
 }
 
 .card-author::before {
-	content: "- " open-quote;
+	content: "— " open-quote;
 }
 
 .card-author::after {
@@ -260,10 +265,19 @@ li {
 .content {
 	display: flex;
 	width: 70%;
+	
+	justify-content: center;
+	align-items: flex-start;
+
+	/* background-color: var(--background-color); */
 }
 
 .content>ul {
 	display: none;
+}
+
+.content>ul>li {
+	margin-bottom: 0.3rem;
 }
 
 .row {
